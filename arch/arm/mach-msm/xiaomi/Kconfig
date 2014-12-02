@@ -1,0 +1,13 @@
+config MACH_XIAOMI
+	bool
+
+menu "XIAOMI Board Selection"
+
+config MACH_MSM8974_CANCRO
+	depends on ARCH_MSM8974
+	select MACH_XIAOMI
+	bool "MSM8974 CANCRO"
+	help
+	  Support for the XIAOMI MSM8974 CANCRO.
+
+endmenu
